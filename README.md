@@ -1,1 +1,58 @@
 # My-Tank-Game
+- Make 2D plain (Giant map, 6 screens by 8 screens)
+    - Make Grid (95:30 (2850) Unit per screen)
+- Make 25 people per team (4 teams)
+    - Red
+    - Blue
+    - Green
+    - Purple
+    - Gray(midlle zone no team)
+- Make player entity
+- Make player movement (wasd and arrow keys for looking)
+- Make NPCs (Not like bedrock skeletons)
+- Make obsticles (Walls)
+- Make the resource blobs
+    - circles
+    - trianges
+    - squares
+    - pentigons
+    - hexegons
+    - Heptagon
+    - Octagon
+    - Nonagon
+    - Decagon
+- Make the skill upgrade system
+    - Damage/Freeze Damage/Burn Damage
+    - Bullet Health/Slowdown/Burn/Ray Pass Through
+    - Bullet Speed/Freeze Range/Flame Range/Bullet Speed
+    - Fire Rate/Freeze Rate/Flame Rate/Cooldown
+    - Max Health
+    - Health Regen
+    - Tank Speed
+    - Body Damage
+- Make the tank upgrade system
+    - Basic
+        - Freeze
+            - Flame
+                - Multi Flame
+            - Rail
+                - Multi Rail
+            - Multi Freeze
+        - Sniper
+            - Scout
+            - OP Sniper
+        - Grinder
+            - Block
+            - Multi Block
+        - Spammer
+            - Multi
+            - OP Spammer
+- Make menu/hub
+    - red v blue
+    - red v blue v green v purple
+    - all v all
+    - tutorial
+    - login
+- Make ranks
+- Make resource configs
+- Chat
