@@ -1,6 +1,6 @@
 # My-Tank-Game
 - Make 2D plain (Giant map, 6 screens by 8 screens)
-    - Make Grid (95:30 (2850) Unit per screen)
+    - Make Grid (80:45 (3600) Unit per screen)
 - Make 25 people per team (4 teams)
     - Red
     - Blue
