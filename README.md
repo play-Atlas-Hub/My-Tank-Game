@@ -56,3 +56,43 @@
 - Make ranks
 - Make resource configs
 - Chat
+
+  
+# NEW
+#My-Tank-Game
+- Make multiplayer
+- Make 25 people per team (4 teams + admin team)
+- Make tank images
+- Make NPCs (No aim bot, bots are not to OP, bots have configs)
+- Make obsticles (Walls) (Random) (Make config)
+- Make the resource blobs (Have made configs, but need random spawn mechanic)
+    - circles
+    - trianges
+    - squares
+    - pentigons
+    - hexagons
+    - Heptagon
+    - Octagon
+    - Nonagon
+    - Decagon
+- Make the skill upgrade system (Keyboard.E) (have made config)
+- Make the tank upgrade system (Keyboard.E) (have made config)
+- Make menu/hub (Keyboard.E) (also need to make config)
+    - red v blue
+    - red v blue v green v purple
+    - all v all (only yourself blue and everyone else red (works like this for all players))
+    - tutorial
+    - login/logout
+    - tank upgrade
+    - skill upgrade
+    - ranks
+    - resume
+- Make ranks (Keyboard.E) (also need to make config)
+- Chat ( Keyboard. \ or / or Keyboard.C )
+- Make auto-spin (Keyboard.R) (also need to make config)
+- Make auto-shoot (Keyboard.Q) (also need to make config)
+- Need to make Keyboard config file, "Button_Config.json"
+- Make after kill get 1/4 amount of their rank and after death loss 1/4 amount of your rank.
+- Make cheat codes
+
+
