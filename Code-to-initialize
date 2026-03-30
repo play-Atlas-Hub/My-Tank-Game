@@ -1,0 +1,64 @@
+import pygame
+
+# Initialize
+pygame.init()
+screen = pygame.display.set_mode((800, 600))
+font = pygame.font.Font(None, 32)
+clock = pygame.time.Clock()
+
+color = 255, 255, 255
+chat_active = True
+text = ""
+chat_log = []
+
+def handle_command(cmd):
+    parts = cmd.split(' ')
+    if parts[0] == "/clear":
+        chat_log.clear()
+    elif parts[0] == "/stc":
+        color = parts[1]
+    else:
+        chat_log.append("Unknown Command")
+
+# Main loop
+running = True
+while running:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+        elif event.type == pygame.KEYDOWN:
+            if not chat_active:
+                if event.key == pygame.K_t: # Press 'T' to chat
+                    chat_active = True
+            else:
+                if event.key == pygame.K_RETURN:
+                    if text.startswith('/'):
+                        handle_command(text)
+                    else:
+                        chat_log.append(text)
+                    text = ""
+                    chat_active = False
+                elif event.key == pygame.K_BACKSPACE:
+                    text = text[:-1]
+                elif event.key == pygame.K_ESCAPE:
+                    chat_active = False
+                    text = ""
+                else:
+                    text += event.unicode
+
+    # Drawing
+    screen.fill((30, 30, 30))
+    # Render chat log
+    for i, line in enumerate(chat_log[-5:]): # Show last 5 lines
+        msg = font.render(line, True, (color))
+        screen.blit(msg, (10, 500 + i * 30))
+
+    # Render input line
+    if chat_active:
+        input_surf = font.render("> " + text, True, (0, 255, 0))
+        screen.blit(input_surf, (10, 570))
+
+    pygame.display.flip()
+    clock.tick(60)
+
+pygame.quit()
